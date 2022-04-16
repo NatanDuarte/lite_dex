@@ -1,6 +1,6 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:lite_dex/model/pokemon.dart';
+import 'package:lite_dex/resources/constants.dart';
 
 class PokemonInfo extends StatelessWidget {
   final Pokemon? pokemon;
@@ -21,7 +21,7 @@ class PokemonInfo extends StatelessWidget {
     if (pokemon != null) {
       return Text(pokemon!.name);
     } else {
-      return const Text("Pokemon");
+      return const Text(Constants.pokemonNotFound);
     }
   }
 
@@ -74,11 +74,7 @@ class PokemonInfo extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: const [
               Text(
-                "No information",
-                style: TextStyle(fontSize: 18.0, color: Colors.black87),
-              ),
-              Text(
-                "Maybe the name is wrong?",
+                "No information\nMaybe the name is wrong?",
                 style: TextStyle(fontSize: 18.0, color: Colors.black87),
               ),
             ],

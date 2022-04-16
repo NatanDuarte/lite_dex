@@ -74,7 +74,7 @@ class PokemonInfo extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: const [
               Text(
-                "No information\nMaybe the name is wrong?",
+                Constants.noInformationMessage,
                 style: TextStyle(fontSize: 18.0, color: Colors.black87),
               ),
             ],

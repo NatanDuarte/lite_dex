@@ -36,6 +36,7 @@ class _FindPokemonByNameState extends State<FindPokemonByName>
           TextFormField(
             controller: _formFieldController,
             decoration: const InputDecoration(
+              border: OutlineInputBorder(),
               hintText: Constants.findPokemonFormHintText,
             ),
           ),
